@@ -15,8 +15,9 @@ Continuous integration and delivery according to [12 app factor](https://12facto
 ### Frontend
 
 1. Primary framework [React.js](https://facebook.github.io/react/)
-2. Backbone.js togheter with Marionnete.js
-3. Bootstrap
+2. Angular 2
+3. Backbone.js together with Marionnete.js
+4. Bootstrap
 
 ### Backend
 
@@ -24,9 +25,43 @@ Continuous integration and delivery according to [12 app factor](https://12facto
 2. Primary database [Mongodb 3.4](https://www.mongodb.com/cloud/atlas)
 3. Express
 
+#### Internal event format
+
+Primary format event approved according to *Schema Draft v4*
+
+```
+    {
+        "title": "Event",
+        "type": "object",
+        "properties": {
+            "headers": {
+                "type": "object",
+                "properties": {
+                    "contentType": {
+                        "type": "string"
+                    },
+                    "actionType": {
+                        "type": "string"
+                    },
+                    "user": {
+                        "type": "string"
+                    }
+                },
+                "required": ["contentType", "actionType"]
+            },
+            "payload": {
+                "type": "object",
+                "properties": {}
+            }
+        },
+        "required": ["headers", "payload"]
+    }
+```
+
 ### Services in cloud
 
  - MongoDB Atlas
+ - RethinkDB Compose.io
  - Redis
  - RabbitMQ
  - Heroku Add-ons
@@ -42,6 +77,7 @@ Continuous integration and delivery according to [12 app factor](https://12facto
  2. [Abstract scheduler](https://github.com/rhinobuccaneers/abstract-scheduler)
  3. [Heroku Buildpack Multi](https://github.com/rhinobuccaneers/heroku-buildpack-multi)
  4. [Heroku Buildpack FFMPEG](https://github.com/rhinobuccaneers/heroku-buildpack-ffmpeg)
+ 5. [Heroku Buildpack GraphicsMagic](https://github.com/foxtrapplimited/heroku-buildpack-graphicsmagick)
 
 ### Allowed node modules
 ```
