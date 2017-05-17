@@ -62,9 +62,7 @@ Primary format event approved according to *Schema Draft v4*
 
  - MongoDB Atlas
  - RethinkDB Compose.io
- - Redis
- - RabbitMQ
- - Heroku Add-ons
+ - Heroku Add-ons (Redis, RabbitMQ)
  - PubNub
  - AWS S3
  - SendGrid
