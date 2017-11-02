@@ -9,8 +9,8 @@ Continuous integration and delivery according to [12 app factor](https://12facto
 
 1. Primary platform as a service [Heroku](https://heroku.com).
 2. Primary continuous integration and delivery service [Codeship](https://codeship.com).
-3. GitHub, Beanstalk
-4. Node.js 6.5.0 and NPM 3.10.3
+3. GitHub, Beanstalk (only for previous projects)
+4. Node.js 8.9.0 and NPM 5.5.1
 
 ### Frontend
 
