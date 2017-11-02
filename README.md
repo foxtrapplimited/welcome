@@ -69,7 +69,7 @@ Primary format event approved according to *Schema Draft v4*
  - Twilio
  - Firebase Cloud Messaging
 
-### Enterprise solutions
+### Solutions:
 
  1. [ESLint config](https://github.com/oleksijfomin/eslint-config-udosoft)
  2. [Abstract scheduler](https://github.com/rhinobuccaneers/abstract-scheduler)
